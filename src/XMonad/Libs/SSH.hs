@@ -41,7 +41,7 @@ fireSSHPrompt config sshList = do
     fireSSH   user       = mkXPrompt SSH config
                            (mkComplFunFromList $ map fst sshList) $
                            ssh user
-                           
+
     ssh       user input = runInTerm "" ("ssh " ++ sshUrl user input)
     sshUrl    user input = user ++ "@" ++ (sshFilter input)
     sshFilter      input = snd $ head $ filter ((==input) . fst) sshList

@@ -36,7 +36,7 @@ toggleVol = do
   fileExists <- liftIO $ doesFileExist volStatFile
   if fileExists
      then spawn $ amixer ++ "off" ++ " && " ++ "rm "   ++ volStatFile
-     else spawn $ amixer ++ "on"  ++ " && " ++ "touch" ++ volStatFile
+  else spawn $ amixer ++ "on"  ++ " && " ++ "touch "   ++ volStatFile
 
 -- | Increases volume by given percentages.
 incVol :: Int -> X ()
