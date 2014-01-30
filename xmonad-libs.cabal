@@ -23,8 +23,9 @@ library
   exposed-modules:     
     XMonad.Libs.Sound
     XMonad.Libs.SSH
+    XMonad.Libs.Prompts
 
-  build-depends:       base           ==4.5.*,
+  build-depends:       base           ==4.6.*,
                        xmonad         ==0.11,
                        xmonad-contrib ==0.11.*,
                        directory      ==1.2.0.*
