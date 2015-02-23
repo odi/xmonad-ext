@@ -1,4 +1,4 @@
-xmonad-libs
+xmonad-ext
 ===========
 
-My additional xmonad libraries.
+My additional xmonad extensions.
